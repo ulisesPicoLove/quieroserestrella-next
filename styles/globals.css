@@ -1,26 +1,220 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+                
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: #ecf8f4;
 }
 
-a {
-  color: inherit;
+html.scroll-off,
+body.scroll-off {
+  height: 100%;
+  overflow: hidden;
+}
+
+nav {
+  position: fixed;
+  text-align: center;
+  z-index: 99999;
+  background-color: #ecf8f4;
+  left: 1em;
+  top: 1em;
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+}
+
+@media screen and (min-width: 720px) {
+  nav {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #dff3ed 25%, #dff3ed 100%);
+  }
+}
+
+nav .mobile-menu {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 14px;
+  position: relative;
+}
+
+nav .mobile-menu.active {
+  z-index: 999999;
+}
+
+nav .mobile-menu.active span {
+  background-color: white;
+}
+
+nav .mobile-menu.active span:first-child {
+  transform: rotate(45deg) translateY(4px) translateX(3px);
+}
+
+nav .mobile-menu.active span:nth-child(2) {
+  display: none;
+}
+
+nav .mobile-menu.active span:last-child {
+  transform: rotate(-45deg) translateY(-8px) translateX(8px);
+}
+
+nav .mobile-menu span {
+  width: 100%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #197ca6;
+}
+
+@media screen and (min-width: 720px) {
+  nav .mobile-menu {
+    display: none;
+  }
+}
+
+nav ul {
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+  nav ul {
+    display: flex;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    width: 100%;
+    max-width: 1140px;
+    flex-direction: row;
+  }
+}
+
+nav ul.shown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-top: 6em;
+}
+
+nav ul.shown li {
+  font-size: 1.4em;
+  padding: 0em 2em;
+  position: relative;
+  z-index: 9999;
+}
+
+nav ul.shown li a {
+  padding: 1em 0em;
+  display: inline-block;
+  width: 100%;
+  border-top: 1px #FFF4 solid;
+  color: white;
+}
+
+nav ul.shown li:first-child a {
+  border-top: none;
+}
+
+nav ul.shown::before {
+  content: "";
+  position: fixed;
+  background-color: #444B;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 9;
+}
+
+nav ul.shown::after {
+  content: "";
+  position: absolute;
+  background-color: #197ca6;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 99;
+}
+
+nav ul li {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0 1em;
+}
+
+nav ul li a {
+  color: #007eaa;
   text-decoration: none;
+  font-weight: 600;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+nav ul li a.selected {
+  color: #bbd04e;
 }
