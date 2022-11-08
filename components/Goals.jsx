@@ -14,7 +14,7 @@ export default function Goals() {
                 </ul>
             </div>
             <div className={styles["col-right"]}>
-                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/c-01.png" />
+                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/c-01.png" alt='Celular'/>
             </div>
         </div>
     )

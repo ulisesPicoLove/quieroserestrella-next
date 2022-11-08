@@ -4,7 +4,7 @@ export default function Benefits() {
     return (
         <div id={styles["beneficios"]}>
             <div className={`${styles["col"]} ${styles["col-left"]}`}>
-                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/d-01.png" />
+                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/d-01.png" alt='Money'/>
             </div>
             <div className={`${styles["col"]} ${styles["col-right"]}`}>
                 <h2>

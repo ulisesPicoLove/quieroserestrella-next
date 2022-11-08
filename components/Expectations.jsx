@@ -34,13 +34,13 @@ export default function Expectations() {
                 </div>
             </div>
             <div className={styles["star-row"]}>
-                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
-                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
-                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
-                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
-                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
-                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
-                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
+                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
+                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
+                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
+                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
+                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
+                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
+                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
             </div>
             <br />
             <h2>¿Cuáles son las actividades como Estrella?</h2>
@@ -90,13 +90,13 @@ export default function Expectations() {
                 </div>
             </div>
             <div className={styles["star-row"]}>
-                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
-                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
-                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
-                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
-                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
-                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
-                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
+                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
+                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
+                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
+                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
+                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
+                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
+                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
             </div>
         </div>
     )

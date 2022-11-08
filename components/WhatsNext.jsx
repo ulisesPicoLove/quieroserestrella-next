@@ -6,10 +6,12 @@ export default function WhatsNext() {
                     <img
                         className={styles["bg"]}
                         src="https://blog.provident.com.mx/wp-content/uploads/2021/12/coins.png"
+                        alt='coins'
                     />
                     <img
                         className={styles["title"]}
                         src="https://blog.provident.com.mx/wp-content/uploads/2021/12/y-ahora-que-sigue.png"
+                        alt='¿Y ahora que sigue?'
                     />
                     <ul>
                         <li>

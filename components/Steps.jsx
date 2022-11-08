@@ -7,16 +7,18 @@ export default function Steps() {
                         <img
                             className={styles["star-01"]}
                             src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png"
+                            alt='star'
                         />
                         <img
                             className={styles["star-02"]}
                             src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png"
+                            alt='star'
                         />
                     </div>
                     <img
                         alt="¿Qué es un Agente Comisionista Independiente?"
                         className={styles["title"]}
-                        src="https://blog.provident.com.mx/wp-content/uploads/2021/12/que-es-una-estrella.png"
+                        src="https://blog.provident.com.mx/wp-content/uploads/2021/12/que-es-una-estrella.png"                        
                     />
                     <h3>
                         Una Estrella es un(a) Agente&nbsp;comisionista independiente que presenta
@@ -27,7 +29,7 @@ export default function Steps() {
                     <div className={styles["row"]}>
                         <div className={styles["item"]}>
                             <div className={styles["number"]}>
-                                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
+                                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
                                 1
                             </div>
                             <h4>La actividad</h4>
@@ -35,7 +37,7 @@ export default function Steps() {
                         </div>
                         <div className={styles["item"]}>
                             <div className={styles["number"]}>
-                                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
+                                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
                                 2
                             </div>
                             <h4>El inicio</h4>
@@ -43,7 +45,7 @@ export default function Steps() {
                         </div>
                         <div className={styles["item"]}>
                             <div className={styles["number"]}>
-                                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
+                                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
                                 3
                             </div>
                             <h4>El día a día</h4>
@@ -51,7 +53,7 @@ export default function Steps() {
                         </div>
                         <div className={styles["item"]}>
                             <div className={styles["number"]}>
-                                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
+                                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
                                 4
                             </div>
                             <h4>El nivel</h4>
@@ -61,7 +63,7 @@ export default function Steps() {
                         </div>
                         <div className={styles["item"]}>
                             <div className={styles["number"]}>
-                                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
+                                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
                                 5
                             </div>
                             <h4>Reconocimiento</h4>
@@ -69,7 +71,7 @@ export default function Steps() {
                         </div>
                         <div className={styles["item"]}>
                             <div className={styles["number"]}>
-                                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" />
+                                <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
                                 6
                             </div>
                             <h4>

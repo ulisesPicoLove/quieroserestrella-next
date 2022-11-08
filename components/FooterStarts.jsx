@@ -6,22 +6,27 @@ export default function FooterStarts() {
             <img
                 className={styles["star-01"]}
                 src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star-mirror.png"
+                alt='star'
             />
             <img
                 className={styles["star-02"]}
                 src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star-mirror.png"
+                alt='star'
             />
             <img
                 className={styles["star-03"]}
                 src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star-mirror.png"
+                alt='star'
             />
             <img
                 className={styles["star-04"]}
                 src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star-mirror.png"
+                alt='star'
             />
             <img
                 className={styles["star-05"]}
                 src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star-mirror.png"
+                alt='star'
             />
         </div>
     )
