@@ -11,27 +11,27 @@ export default function EstrellasContainer({children}) {
                     </div>
                     <ul id="nav-menu">
                         <li>
-                            <a className={styles["menu-item"]} href={`#${styles["intro"]}`}>
+                            <a className={styles["menu-item"]} href={`/#${styles["intro"]}`}>
                                 Intro
                             </a>
                         </li>
                         <li>
-                            <a className={styles["menu-item"]} href={`#${styles["que-es"]}`}>
+                            <a className={styles["menu-item"]} href={`/#${styles["que-es"]}`}>
                                 ¿Qué es?
                             </a>
                         </li>
                         <li>
-                            <a className={styles["menu-item"]} href={`#${styles["expectativas"]}`}>
+                            <a className={styles["menu-item"]} href={`/#${styles["expectativas"]}`}>
                                 ¿Qué buscamos?
                             </a>
                         </li>
                         <li>
-                            <a className={styles["menu-item"]} href={`#${styles["beneficios"]}`}>
+                            <a className={styles["menu-item"]} href={`/#${styles["beneficios"]}`}>
                                 Beneficios
                             </a>
                         </li>
                         <li>
-                            <a className={styles["menu-item"]} href={`#${styles["que-sigue"]}`}>
+                            <a className={styles["menu-item"]} href={`/#${styles["que-sigue"]}`}>
                                 ¿Qué sigue?
                             </a>
                         </li>

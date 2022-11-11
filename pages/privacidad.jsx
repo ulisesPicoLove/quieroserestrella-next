@@ -1,11 +1,5 @@
 import EstrellasContainer from '../components/EstrellasContainer'
-import HeaderEstrellas from '../components/HeaderEstrellas'
-import Steps from '../components/Steps'
-import Expectations from '../components/Expectations'
-import Goals from '../components/Goals'
-import Benefits from '../components/Benefits'
-import FooterStarts from '../components/FooterStarts'
-import WhatsNext from '../components/WhatsNext'
+import Privacy from '../components/Privacy';
 import Script from 'next/script'
 
 export default function estrella() {
@@ -29,13 +23,7 @@ export default function estrella() {
         }}
       />
       <EstrellasContainer>
-        <HeaderEstrellas />
-        <Steps />
-        <Expectations />
-        <Goals />
-        <Benefits />
-        <FooterStarts />
-        <WhatsNext />
+        <Privacy/>
       </EstrellasContainer>
     </>
   )
