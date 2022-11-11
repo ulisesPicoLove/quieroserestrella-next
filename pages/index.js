@@ -6,6 +6,7 @@ import Goals from '../components/Goals'
 import Benefits from '../components/Benefits'
 import FooterStarts from '../components/FooterStarts'
 import WhatsNext from '../components/WhatsNext'
+import FooterPrivacy from '../components/FooterPrivacy'
 import Script from 'next/script'
 
 export default function estrella() {
@@ -36,6 +37,7 @@ export default function estrella() {
         <Benefits />
         <FooterStarts />
         <WhatsNext />
+        <FooterPrivacy/>
       </EstrellasContainer>
     </>
   )
