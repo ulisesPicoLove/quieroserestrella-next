@@ -33,7 +33,7 @@ export default function Expectations() {
                     </ul>
                 </div>
             </div>
-            <div className={styles["star-row"]}>
+            <div className={styles["star-row"]} id="actividades-a-realizar">
                 <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
                 <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>
                 <img src="https://blog.provident.com.mx/wp-content/uploads/2021/12/star.png" alt='star'/>

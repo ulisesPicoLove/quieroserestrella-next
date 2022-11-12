@@ -79,7 +79,7 @@ export default function HeaderEstrellas() {
                     </div>
                     <a
                         className={styles["cta"]}
-                        href="https://wa.me/522224847575?text=Vacante+comisionista,+presiona+enviar"
+                        href="https://forms.office.com/r/XGJWUq13CT"
                     >
                         Tu camino empieza aquí
                     </a>
