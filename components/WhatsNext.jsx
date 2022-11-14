@@ -39,7 +39,7 @@ export default function WhatsNext() {
                     </h2>
                     <a
                         className={`${styles["cta"]} ${styles["cta-dark"]}`}
-                        href="https://forms.office.com/Pages/ShareFormPage.aspx?id=fwjlo7vpsEWivNALpDA5Y0ZB66nDOM5Nt6AnKUBWyeFUOTJTRTJMMUM0NUpRS01FR1hLUDVPU1pLVi4u&sharetoken=Xvo3KuJVszBy8znobRlI"
+                        href="https://forms.office.com/Pages/ResponsePage.aspx?id=fwjlo7vpsEWivNALpDA5Y0ZB66nDOM5Nt6AnKUBWyeFUOTJTRTJMMUM0NUpRS01FR1hLUDVPU1pLVi4u"
                     >
                         Tu camino empieza aquí
                     </a>
