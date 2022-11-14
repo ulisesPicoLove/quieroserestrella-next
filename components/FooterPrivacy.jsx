@@ -10,9 +10,12 @@ const FooterPrivacy = () => {
                     text-align: right;
                     padding: 1em 0;                    
                 }
-                .footer-privacy a:is(:visited){
+                .footer-privacy a{
                     color: #007eaa;
                     font-weight: 600;
+                }
+                .footer-privacy a:visited{
+                    color: #007eaa;                    
                 }
                 `
             }
