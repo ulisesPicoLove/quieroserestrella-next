@@ -79,7 +79,7 @@ export default function HeaderEstrellas() {
                     </div>
                     <a
                         className={styles["cta"]}
-                        href="https://forms.office.com/r/XGJWUq13CT"
+                        href="https://forms.office.com/Pages/ShareFormPage.aspx?id=fwjlo7vpsEWivNALpDA5Y0ZB66nDOM5Nt6AnKUBWyeFUOTJTRTJMMUM0NUpRS01FR1hLUDVPU1pLVi4u&sharetoken=Xvo3KuJVszBy8znobRlI"
                     >
                         Tu camino empieza aquí
                     </a>

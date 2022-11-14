@@ -1,6 +1,7 @@
 import EstrellasContainer from '../components/EstrellasContainer'
 import Privacy from '../components/Privacy';
 import Script from 'next/script'
+import Head from 'next/head';
 
 export default function estrella() {
   return (
@@ -22,6 +23,9 @@ export default function estrella() {
           });
         }}
       />
+      <Head>
+        <title>Aviso de privacidad | quieroserestrella.mx</title>
+      </Head>
       <EstrellasContainer>
         <Privacy/>
       </EstrellasContainer>
