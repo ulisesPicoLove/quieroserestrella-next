@@ -13,6 +13,7 @@ const Privacy = () => {
                         margin-left: 0;
                         margin-right: 0;
                         font-weight: bold;
+                        color: #197ca6;
                     }
                     h2{
                         display: block;
@@ -22,6 +23,7 @@ const Privacy = () => {
                         margin-left: 0;
                         margin-right: 0;
                         font-weight: bold;
+                        color: #197ca6;
                     }
                     p{
                         display: block;
@@ -30,6 +32,7 @@ const Privacy = () => {
                         margin-left: 0;
                         margin-right: 0;
                         font-size: 1.2em;
+                        color: #197ca6;
                     }
                     strong{
                         font-weight: bold;	
@@ -55,6 +58,7 @@ const Privacy = () => {
                     li{
                         display: list-item;	
                         font-size: 1.2em;
+                        color: #197ca6;
                     }
                     .container{
                         text-align: left;
