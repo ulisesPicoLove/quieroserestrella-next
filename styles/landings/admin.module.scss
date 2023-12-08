@@ -1,0 +1,76 @@
+$background: #efefef;
+$lfs-blue: #2eabe0;
+$lfs-green: #adda43;
+
+.title {
+    font-size: 32px;
+    margin: 0.5em 0;
+}
+.table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+
+    div {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width: 700px) {
+            width: 100%;
+        }
+    }
+
+    table {
+        width: 100%;
+    }
+
+    thead {
+        border-top: 2px solid $lfs-green;
+        border-bottom: 2px solid $lfs-green;
+        th {
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px;
+            color: $lfs-blue;
+            font-weight: 600;
+            border: 1px solid #f1f1f1;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid #f1f1f1;
+            color: black;
+            td {
+                padding: 10px;
+                border: 1px solid #f1f1f1;
+            }
+            th {
+                padding-left: 10px;
+                border: 1px solid #f1f1f1;
+            }
+        }
+    }
+}
+
+.download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+
+    & button {
+        background-color: $lfs-blue;
+        color: white;
+        font-weight: 600;
+        padding: 0.5em 1em;
+        border: solid white 2px;
+        border-radius: 20px;
+        cursor: pointer;
+        &:hover {
+            background-color: $lfs-green;
+        }
+    }
+}
