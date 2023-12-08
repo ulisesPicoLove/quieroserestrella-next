@@ -2,8 +2,11 @@ import React from 'react'
 import styles from '../styles/landings/login.module.scss'
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
+import Swal from 'sweetalert'
+import { useRouter } from 'next/router'
 
 export default function login() {
+    const router = useRouter();
     const formik = useFormik({
         initialValues: {
             email: "",
@@ -25,8 +28,15 @@ export default function login() {
                 })
             });
 
-            const data = await response.json();
-            console.log(data);
+            if (response.status === 200) {
+                swal("", "Usuario creado correctamente.", "success").then(()=>{
+                    router.push("/admin");
+                })
+            } else if (response.status === 400) {
+                swal("", "El usuario ya existe", "error")
+            } else {
+                swal("", "Hubo un error al crear el usuario", "error")
+            }
         }
     })
     return (

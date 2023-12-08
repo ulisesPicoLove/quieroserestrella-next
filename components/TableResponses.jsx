@@ -1,6 +1,8 @@
 import React from 'react'
 import { json2csv } from 'json-2-csv';
 import styles from '../styles/landings/admin.module.scss'
+import Link from 'next/link'
+import Swal from 'sweetalert'
 
 export default function TableResponses({ response }) {
 
@@ -39,8 +41,11 @@ export default function TableResponses({ response }) {
 
             // Eliminar el enlace del DOM
             document.body.removeChild(link);
+            swal("", "Documento descargado con exito", "success")
+
         } catch (error) {
             console.error('Error al convertir a CSV:', error);
+            swal("", "Hubo un error al descargar el documento", "error")
         }
     }
 
@@ -78,6 +83,9 @@ export default function TableResponses({ response }) {
 
             <div className={ styles['download-button'] }>
                 <button onClick={() => convertJsonToCsv(filteredData)}>Descargar CSV</button>
+                <Link href={"/signup"}>
+                    <button>Crear usuario</button>
+                </Link>
             </div>
         </main>
 
