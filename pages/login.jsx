@@ -4,8 +4,9 @@ import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import { useRouter } from 'next/router'
 import Swal from 'sweetalert'
+import { signIn } from 'next-auth/react'
 
-export default function login() {
+export default function Login() {
     const router = useRouter();
     const formik = useFormik({
         initialValues: {
@@ -17,22 +18,16 @@ export default function login() {
             password: Yup.string().required("Debes de ingresar tu contraseña."),
         }),
         onSubmit: async (values) => {
-            const response = await fetch("/api/auth/login",{
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    email: values.email,
-                    password: values.password
-                })
+            const response = await signIn("credentials", {
+                email: values.email,
+                password: values.password,
+                redirect: false
             });
 
-            const data = await response.json();
-            if (response.status === 200) {
+            if (response?.ok) {
                 router.push("/admin")
-            } 
-            else if (response.status === 401) {
+            }
+            if (response?.error) {
                 swal("", "Error en las credenciales de inicio de sesion.", "error")
             }
         }

@@ -5,7 +5,7 @@ import * as Yup from 'yup'
 import Swal from 'sweetalert'
 import { useRouter } from 'next/router'
 
-export default function login() {
+export default function Signup() {
     const router = useRouter();
     const formik = useFormik({
         initialValues: {
@@ -19,6 +19,7 @@ export default function login() {
         onSubmit: async (values) => {
             const response = await fetch("/api/auth/signup",{
                 method: "POST",
+                credentials: "include",
                 headers: {
                     "Content-Type": "application/json"
                 },

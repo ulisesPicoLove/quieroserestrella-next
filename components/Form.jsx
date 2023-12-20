@@ -4,8 +4,10 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import cities from '../json/cities.json'
 import Swal from 'sweetalert'
+import { useRouter } from 'next/router';
 
 export default function Form() {
+    const router = useRouter();
     const formik = useFormik({
         initialValues: {
             name: "",
@@ -43,9 +45,14 @@ export default function Form() {
                 })
 
                 const data = await response.json()
-                console.log(data);
+                if (response.status === 200) {
+                    Swal("", "Tu respuesta ha sido recibida.", "success")
+                        .then(()=>{
+                            router.push("/")
+                        })
+                }
             } catch (error) {
-                
+                Swal("", "Ocurrio un problema", "error");
             }
         }
     })

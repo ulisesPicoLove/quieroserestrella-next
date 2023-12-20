@@ -1,5 +1,7 @@
 import { connectMongo, disconnectMongo } from "../../lib/dbconnection/mongodb";
 import response from "../../lib/models/Responses";
+import { getServerSession } from "next-auth/next"
+import { authOptions } from "./auth/[...nextauth]"
 
 const handdler = async (req, res) => {
   if (req.method === "POST") {
@@ -23,15 +25,20 @@ const handdler = async (req, res) => {
       await disconnectMongo();
     }
   } else if (req.method === "GET") {
-    try {
-        await connectMongo();
-        const data = await response.find({});
-        res.status(200).json({ message: "Ok", data: data });
-    } catch (error) {
-      console.log(error);
-      res.status(500).json({ message: error });
-    } finally {
-      await disconnectMongo();
+    const session = await getServerSession(req, res, authOptions)
+    if (session) {
+      try {
+          await connectMongo();
+          const data = await response.find({});
+          res.status(200).json({ message: "Ok", data: data });
+      } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: error });
+      } finally {
+        await disconnectMongo();
+      } 
+    } else {
+      res.status(401).json({ message: "Unauthorized" });  
     }
   } else {
     res.status(405).json({ message: "Method not allowed" });

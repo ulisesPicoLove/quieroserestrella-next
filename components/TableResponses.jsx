@@ -3,6 +3,7 @@ import { json2csv } from 'json-2-csv';
 import styles from '../styles/landings/admin.module.scss'
 import Link from 'next/link'
 import Swal from 'sweetalert'
+import { signOut } from 'next-auth/react';
 
 export default function TableResponses({ response }) {
 
@@ -86,6 +87,7 @@ export default function TableResponses({ response }) {
                 <Link href={"/signup"}>
                     <button>Crear usuario</button>
                 </Link>
+                <button onClick={() => signOut()}>Cerrar sesión.</button>
             </div>
         </main>
 
