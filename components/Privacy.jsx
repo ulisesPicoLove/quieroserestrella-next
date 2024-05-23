@@ -196,11 +196,6 @@ const Privacy = () => {
             <p>
                 El Aviso de Privacidad podrá sufrir modificaciones por cumplimiento de requerimientos legales, por actualizaciones internas de CEP, o para optimizar la gestión de la solicitud o del perfeccionamiento de la posterior relación comercial a través del contrato de comisión mercantil que en su momento se firme, por lo que cuando existan cambios en este aviso de privacidad, CEP le informará a través de los medios que existen para comunicar información relevante.
             </p>
-
-            <hr />
-            <p>
-                <small>Solicitante para: Agente Comisionista Mercantil Independiente</small>
-            </p>
         </div>
     );
 }
